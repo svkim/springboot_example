@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h1>Welcome, <span th:text="${member.name}"></span>!</h1>
+<p>Your ID: <span th:text="${member.id}"></span></p>
+<p>Gender: <span th:text="${member.gender}"></span></p>
+<p>Birth: <span th:text="${member.birth}"></span></p>
+<p>Info: <span th:text="${member.info}"></span></p>
+<a th:href="@{/auth/logout}">Logout</a>
+</body>
+</html>
